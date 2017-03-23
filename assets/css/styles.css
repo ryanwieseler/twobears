@@ -9,8 +9,12 @@
 }
 
 html{
-	font: normal 16px sans-serif;
+	font: 'Libre Bakerville' 16px sans-serif;
 	color: #555;
+}
+
+body{
+	font-size: 1em;
 }
 
 ul, nav{
@@ -73,13 +77,13 @@ section{
 section h3.title{
 	color: #414a4f;
 	text-transform: capitalize;
-	font: bold 32px 'Open Sans', sans-serif;
+	font: bold 32px 'Libre Franklin', sans-serif;
 	margin-bottom: 35px;
 	text-align: center;
 }
 
 section p{
-	max-width: 800px;
+	max-width: 540px;
 	text-align: center;
 	margin-bottom: 35px;
 	padding: 0 20px;
@@ -93,7 +97,9 @@ ul.grid{
 	justify-content: center;
 }
 
-
+address {
+	text-align: center;
+}
 /*-------------
  	Header
 -------------*/
@@ -112,7 +118,7 @@ header{
 }
 
 header h2{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Libre Franklin', sans-serif;
 }
 
 header nav{
@@ -183,17 +189,21 @@ header nav li:last-child{
 	width: 100%;
 	height: 100%;
 	background-color: #414a4f;
-	opacity: 0.75;
+	opacity: 0;
 }
 
 .hero h1{
-	font: bold 60px 'Open Sans', sans-serif;
+	font: 60px 'Libre Franklin', sans-serif;
 	margin-bottom: 15px;
 }
 
 .hero h3{
-	font: normal 28px 'Open Sans', sans-serif;
+	font: normal 28px 'Libre Franklin', sans-serif;
 	margin-bottom: 40px;
+}
+
+.hero h3.title {
+	color:#fff;
 }
 
 .hero a.btn{
@@ -313,7 +323,66 @@ header nav li:last-child{
 
 }
 
+/*----------------------
+ 	Our Engagement Section
+----------------------*/
 
+#our-engagement, #about-us {
+	align-items: left;
+  text-align: left;
+}
+
+#our-engagement p, #about-us p {
+	text-align: left;
+}
+
+#our-engagement h3, #about-us h3 {
+	margin-left: 15px;
+	margin-top: 30%;
+}
+.about-us .grid li{
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.about-us .grid li i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.about-us .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.about-us .grid li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+	.about-us .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.about-us .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.about-us .grid li{
+		flex-basis: 100%;
+	}
+
+}
 
 /*--------------------
  	Reviews Section
@@ -448,11 +517,4 @@ footer p a{
 		padding: 80px 15px;
 	}
 
-}
-
-
-/* -- Demo ads -- */
-
-@media (max-width: 1200px) {
-	#bsaHolder{ display:none;}
 }
