@@ -1,0 +1,69 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+}
+p {
+  font-size: 18px;
+  line-height: 27px;
+}
+h1 {
+  font-size:64px;
+  line-height: 84px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+h2 {
+  font-size:36px;
+  line-height:52px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* panels */
+.panel {
+  padding-top:300px;
+  padding-bottom:300px;
+}
+.panel-color {
+  background-color: rgba(63, 88, 109, 0.6);
+  padding-top:200px;
+  padding-bottom:200px;
+}
+.panel p {
+  text-align:left;
+  color:#fff;
+}
+.panel h2 {
+  color:yellow;
+}
+.panel-short {
+  padding-top:150px;
+  padding-bottom:150px;
+  text-align: center;
+}
+
+/* jumbotron hero panel */
+.jumbotron-hero {
+  background-image: url(../assets/img/hero-nr-tree.png);
+  background-size: cover;
+}
+.hero h1, .hero p {
+  text-align:center;
+  color: #fff;
+}
+
+/* jumbotron about us panel */
+.jumbotron-aboutus {
+  background-image: url(../assets/img/about-us.png);
+  background-size: cover;
+}
+
+/* jumbotron about us panel */
+.jumbotron-our-engagement {
+  background-image: url(../assets/img/our-engagement.png);
+  background-size: cover;
+}
