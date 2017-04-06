@@ -13,4 +13,7 @@ $(document).ready(function() {
       $("#engagement-tbg").css("height", ourengagement);
     })
 
+    $(".navbar-toggle").on("click", function () {
+   	  $(this).toggleClass("active");
+    })
 });

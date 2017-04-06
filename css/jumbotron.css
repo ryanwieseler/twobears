@@ -7,6 +7,7 @@ body {
 p {
   font-size: 18px;
   line-height: 27px;
+    margin:0 0 27px;
 }
 h1 {
   font-size:64px;
@@ -38,6 +39,73 @@ h3 {
   margin-right:50%;
 }
 
+/* nav bar */
+
+.navbar-inverse {
+    background-color: #23455B;
+    border-color: #152B39;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: 0 none;
+}
+
+.navbar-toggle {
+    float: none;;
+    margin-left: 37%;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #23455B;
+}
+
+.menu-text {
+  color: #fff;
+  float: left;
+}
+
+.menu-text p {
+  line-height: 16px;
+  margin: 0;
+}
+
+.icon-bar {
+  margin-left: 57px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #E2CD21;
+    background-color: #23455B;
+}
+
+/* Icon 4 */
+
+.navbar-toggle .icon-bar:nth-of-type(4) {
+	  top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(5) {
+  	top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  top: 6px;
+	  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(4) {
+	  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(5) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+}
 
 /* panels */
 .panel {
@@ -54,7 +122,7 @@ h3 {
   color:#fff;
 }
 .panel h2 {
-  color:yellow;
+  color:#E2CD21;
 }
 .panel-short {
   padding-top:150px;
@@ -91,8 +159,57 @@ h3 {
   }
 }
 
+@media (max-width: 1400px) {
+  .jumbotron-hero {
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position-x: 50%
+  }
+}
+
 @media (max-width: 889px) {
   .jumbotron-our-engagement {
     background-size:cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .jumbotron-hero {
+    background-size:167%;
+    background-repeat: no-repeat;
+    background-color: #23455B;
+    background-position-x:50%;
+  }
+  .jumbotron-aboutus, .jumbotron-our-engagement {
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-color: #23455B;
+  }
+  .hero.panel {
+    padding-top: 130px;
+    padding-bottom: 10px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .text-bg {
+    width:0;
+  }
+  .panel-color {
+    padding-top: 250px;
+    padding-bottom: 50px;
+  }
+  .panel-short {
+    padding-top:100px;
+    padding-bottom:100px;
   }
 }
