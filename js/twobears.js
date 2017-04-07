@@ -13,7 +13,28 @@ $(document).ready(function() {
       $("#engagement-tbg").css("height", ourengagement);
     })
 
-    $(".navbar-toggle").on("click", function () {
-   	  $(this).toggleClass("active");
-    })
+    $('.nav a').on('click', function(){
+      $(".nav").find(".active").removeClass("active");
+      $(this).parent().addClass("active");
+      $('#navbar').collapse('hide');
+    });
+
+    $(".navbar-nav li a[href^='#']").on('click', function(e) {
+       // prevent default anchor click behavior
+       e.preventDefault();
+
+       // store hash
+       var hash = this.hash;
+
+       // animate
+       $('html, body').animate({
+           scrollTop: $(this.hash).offset().top
+         }, 300, function(){
+
+           // when done, add hash to url
+           // (default click behaviour)
+           window.location.hash = hash;
+         });
+     });
+
 });
