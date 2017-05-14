@@ -2,6 +2,7 @@ $(document).ready(function() {
   $(window).on('load', function() {
     $("#aboutus-tbg").css("height", $("#about-us").height());
     $("#engagement-tbg").css("height", $("#our-engagement").height());
+    $("#registry").css("height", $(window).height());
   })
 
   $(window).resize(function() {

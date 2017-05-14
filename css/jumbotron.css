@@ -162,6 +162,10 @@ hr {
   margin-top:75px;
 }
 
+/* Registry */
+#registry {
+  height: auto;
+}
 
 /* Bear Icon */
 
@@ -203,11 +207,30 @@ hr {
   display:block;
 }
 .pocket a:hover img{
-  top: 0px;
+  top: -20px;
   -webkit-transition: .25s ease-in-out;
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+}
+.pocket a p {
+  font-size: 12px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 35px;
+  z-index: 999999999;
+  color: white;
+  left: 16px;
+  letter-spacing: 1.2px;
+  opacity: 0
+}
+
+.pocket a:hover p {
+  opacity: 1;
+  -webkit-transition: .8s ease-in-out;
+  -moz-transition: .8s ease-in-out;
+  -o-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
 }
 
 /* panels */
@@ -222,7 +245,7 @@ hr {
 }
 .panel-color {
   padding-top:200px;
-  padding-bottom:200px;
+  padding-bottom:165px;
   padding-left:30px;
 }
 .panel p {
@@ -255,6 +278,13 @@ hr {
 .jumbotron-our-engagement {
   background-image: url(../assets/img/our-engagement.png);
   background-size: 145%;
+}
+
+/* jumbotron registry photo */
+.jumbotron-registry {
+  background-image: url(../assets/img/hydrangas.png);
+  background-position-y: 100%;
+  background-size: cover;
 }
 
 
